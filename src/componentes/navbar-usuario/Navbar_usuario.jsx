@@ -31,9 +31,9 @@ function Navbar_usuario() {
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#">
+              <Link to="/sidebar" className="nav-link">
                 Salir
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
