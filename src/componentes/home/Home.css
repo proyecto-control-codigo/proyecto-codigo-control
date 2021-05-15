@@ -6,6 +6,16 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.home {
+  height: 100%;
+}
+
 .bg-img {
   background: url(../../assets/imgs/background-2.jpg);
   background-position: center;
@@ -13,17 +23,19 @@
   background-repeat: no-repeat;
   height: 90vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
 }
 
 .container-button {
-  width: 35vw;
-  align-items: center;
+  max-width: 400px;
   margin-inline: auto;
   text-align: center;
-  padding-top: 15%;
+  margin-block: auto;
 }
 
-.btn {
+.boton {
   color: whitesmoke;
   padding: 10px 40px;
   border-radius: 15px;
@@ -38,6 +50,17 @@
   display: inline-block;
 }
 
-.btn:hover {
+.boton:hover {
   background-color: #c58235;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .title-home {
+    font-size: 30px;
+  }
+  .container-button {
+    max-width: 200px;
+  }
 }

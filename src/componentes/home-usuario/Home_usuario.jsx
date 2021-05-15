@@ -8,7 +8,7 @@ function Home_usuario() {
     <div>
       <NavbarUser />
       <div className="bg">
-        <h1>Panel Adminstracion</h1>
+        <h1 className="test">Panel Adminstracion</h1>
       </div>
     </div>
   );

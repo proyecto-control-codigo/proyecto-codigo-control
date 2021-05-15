@@ -1,5 +1,55 @@
+.cont-nav-user {
+  max-width: 100%;
+}
+
 .header {
   display: flex;
-  justify-content: space-between;
-  min-width: 90%;
+  justify-content: space-evenly;
+  max-width: 100%;
+  background-color: rgb(48, 48, 48);
+  height: 10vh;
+  align-items: center;
+}
+
+.nav-user {
+  width: 100%;
+}
+
+.hamburguer {
+  display: none;
+}
+
+.line {
+  height: 3px;
+  width: 24px;
+  background-color: white;
+  margin: 2px;
+}
+
+.navi-link {
+  font-weight: bold;
+}
+.navi-link:hover {
+  color: #b8f5c8;
+}
+
+.navi-links {
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .nav-user {
+    display: none;
+  }
+  .hamb-dis {
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburguer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.075rem;
+    cursor: pointer;
+  }
 }

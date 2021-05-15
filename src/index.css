@@ -1,4 +1,7 @@
-Link {
-  text-decoration: none;
-  pointer-events: none;
+html {
+  max-width: 100%;
+}
+
+body {
+  max-width: 100%;
 }
