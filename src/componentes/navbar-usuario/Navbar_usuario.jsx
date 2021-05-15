@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/imgs/logo.png";
 import "./Navbar_usuario.css";
+import Menu from "../menu-hamb-user/Menu_hamb_user";
 
 const DeployHamb = () => {
   return (
@@ -32,32 +33,23 @@ function Navbar_usuario() {
               </Link>
             </li>
             <li>
-              <Link to="/controla" className="navi-link">
+              <Link to="/" className="navi-link">
                 Controla
               </Link>
             </li>
             <li>
-              <Link className="navi-link" href="#">
+              <Link to="/" className="navi-link">
                 Comparte
               </Link>
             </li>
             <li>
               <Link to="/" className="navi-link">
-                Salir <i class="fas fa-sign-out-alt"></i>
+                Salir <i className="fas fa-sign-out-alt"></i>
               </Link>
             </li>
           </ul>
         </nav>
-        <div
-          className="hamburguer"
-          onClick={() => {
-            DeployHamb();
-          }}
-        >
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
+        <Menu />
       </header>
     </div>
   );

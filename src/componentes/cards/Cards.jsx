@@ -2,14 +2,13 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import card1 from "../../assets/imgs/card1.jpg";
 import card2 from "../../assets/imgs/card2.jpg";
 import card3 from "../../assets/imgs/card3.jpg";
+import "./Cards.css";
 
 const useStyles = makeStyles({
   root: {
@@ -18,7 +17,7 @@ const useStyles = makeStyles({
     marginBottom: 20,
   },
   media: {
-    height: 140,
+    height: 200,
   },
 });
 
@@ -27,15 +26,17 @@ export default function MediaCard() {
 
   return (
     <section
+      className="cards-cont"
       style={{
         display: "flex",
-        textAlign: "center",
+        alignItems: "center",
         paddingInline: "1rem",
         marginTop: "1rem",
+        width: "100%",
       }}
     >
       <Card className={classes.root}>
-        <CardActionArea>
+        <CardActionArea style={{ alignContent: "center" }}>
           <CardMedia
             className={classes.media}
             image={card1}
