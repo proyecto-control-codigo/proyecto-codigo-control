@@ -1,0 +1,28 @@
+.hamburguesa-home-user {
+  display: none;
+  pointer-events: none;
+}
+
+.boton-hamb {
+  pointer-events: none;
+}
+
+.line-hamb {
+  background-color: white;
+  height: 3px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+  .hamburguesa-home-user {
+    display: flex;
+    padding-right: 0.75rem;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .boton-hamb {
+    pointer-events: all;
+  }
+}

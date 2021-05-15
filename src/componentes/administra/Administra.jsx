@@ -2,6 +2,7 @@ import React from "react";
 import "./Administra.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "../navbar-usuario/Navbar_usuario";
+import Footer from "../footer/Footer";
 import {
   Table,
   Button,
@@ -12,7 +13,6 @@ import {
   FormGroup,
   ModalFooter,
 } from "reactstrap";
-import Footer from "../footer/Footer";
 
 const data = [
   {

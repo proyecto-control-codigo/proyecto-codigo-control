@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/imgs/logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Hamburguer from "../menu-hamb/Hamb";
 
 const Navbar = () => {
   return (
@@ -30,11 +31,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div className="hamburguesa-home">
-          <div className="line-hamb"> </div>
-          <div className="line-hamb"> </div>
-          <div className="line-hamb"> </div>
-        </div>
+        <Hamburguer />
       </nav>
     </header>
   );
