@@ -5,3 +5,9 @@
   background-size: cover;
   height: 90vh;
 }
+
+.test {
+  color: rgb(96, 96, 194);
+  text-align: center;
+  padding-top: 50px;
+}

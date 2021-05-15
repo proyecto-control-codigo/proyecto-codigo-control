@@ -5,9 +5,10 @@
   inline-size: 1;
 }
 
-.container {
+.container-about {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 .bg-about {

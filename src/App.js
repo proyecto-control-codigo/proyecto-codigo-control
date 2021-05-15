@@ -5,8 +5,9 @@ import Home from "./componentes/home/Home";
 import Home_usuario from "./componentes/home-usuario/Home_usuario";
 import Quienes from "./componentes/about_us/Quienes_somos";
 import Login from "./componentes/login/Login";
+import Controla from "./componentes/controla/Controla";
+// import Sidebar from "./componentes/sidebar/Sidebar";
 import Administra from "./componentes/administra/Administra";
-import Sidebar from "./componentes/sidebar/Sidebar";
 
 function App() {
   return (
@@ -25,11 +26,14 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
+        <Route path="/controla">
+          <Controla />
+        </Route>
+        {/* <Route path="/sidebar">
+          <Sidebar />
+        </Route> */}
         <Route path="/administra">
           <Administra />
-        </Route>
-        <Route path="/sidebar">
-          <Sidebar />
         </Route>
       </Switch>
     </Router>

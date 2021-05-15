@@ -3,40 +3,61 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/imgs/logo.png";
 import "./Navbar_usuario.css";
 
+const DeployHamb = () => {
+  return (
+    <div className="hamb-list">
+      <p className="items">Control</p>
+      <p className="items">Adminsitra</p>
+      <p className="items">Comparte</p>
+      <p className="items">Salir</p>
+    </div>
+  );
+};
+
 function Navbar_usuario() {
   return (
-    <div>
+    <div className="cont-nav-user">
       <header className="header">
-        <Link to="/">
+        <Link to="/" className="links-st">
           <div className="logo-container">
             <img className="logo" src={logo} alt="logo" />
             <h4>Control</h4>
           </div>
         </Link>
-        <nav className="nav">
-          <ul className="nav-links">
+        <nav className="nav-user">
+          <ul className="navi-links">
             <li>
-              <a className="nav-link" href="#">
+              <Link to="/administra" className="navi-link">
                 Administra
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <Link to="/controla" className="navi-link">
                 Controla
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" href="#">
+              <Link className="navi-link" href="#">
                 Comparte
-              </a>
+              </Link>
             </li>
             <li>
-              <Link to="/sidebar" className="nav-link">
-                Salir
+              <Link to="/" className="navi-link">
+                Salir <i class="fas fa-sign-out-alt"></i>
               </Link>
             </li>
           </ul>
         </nav>
+        <div
+          className="hamburguer"
+          onClick={() => {
+            DeployHamb();
+          }}
+        >
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
       </header>
     </div>
   );

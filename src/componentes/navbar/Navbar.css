@@ -8,17 +8,16 @@
   line-height: 1;
 }
 
-header {
+.header-nav {
   display: flex;
   height: 10vh;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background: rgb(48, 48, 48);
-  align-items: center;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 4px 10px 5px 0px rgba(104, 14, 14, 0.5);
-  position: relative;
+  position: sticky;
   z-index: 5;
 }
 
@@ -37,30 +36,59 @@ h4 {
   font-size: 18px;
 }
 
-.logo-container,
-.nav-links {
+.navi-links {
   display: flex;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 10px;
-  background: transparent;
-  letter-spacing: 2px;
-  margin-right: 5rem;
-}
-
-.nav-links {
+  padding-top: 1rem;
   list-style: none;
 }
 
-.links {
+.navi-link {
   text-decoration: none;
-  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  background: transparent;
+  letter-spacing: 2px;
+  padding-right: 3rem;
 }
 
-.links:hover {
-  text-decoration: whitesmoke underline;
+.navi-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.links-st {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  padding-right: 4rem;
+  font-size: 22px;
+}
+
+.links-st:hover {
+  color: #b8f5c8;
+  text-decoration: none;
+}
+
+.hamburguesa-home {
+  display: none;
+}
+
+.line-hamb {
+  background-color: white;
+  height: 3px;
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  .navi-links {
+    display: none;
+  }
+
+  .hamburguesa-home {
+    display: flex;
+    padding-right: 0.75rem;
+    flex-direction: column;
+    cursor: pointer;
+  }
 }
